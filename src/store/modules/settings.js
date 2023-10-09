@@ -1,6 +1,6 @@
-import defaultSettings from '@/settings'
+import config from '@/config/index'
 
-const { showSettings, fixedHeader, sidebarLogo } = defaultSettings
+const { showSettings, fixedHeader, sidebarLogo } = config
 
 const state = {
   showSettings: showSettings,
