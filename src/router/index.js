@@ -26,19 +26,33 @@ export const constantRoutes = [
     children: [{
       path: 'dashboard',
       name: 'Dashboard',
-      component: () => import('@/views/dashboard/index'),
+      component: () => import('@/views/Dashboard.vue'),
       meta: { title: '首页', icon: 'dashboard' }
     }]
   },
+
+  {
+    path: '/info',
+    component: Layout,
+    children: [
+      {
+        path: 'info',
+        name: 'Form',
+        component: () => import('@/views/Info.vue'),
+        meta: { title: 'U 本位数据', icon: 'tree' }
+      }
+    ]
+  },
+
 
   {
     path: '/form',
     component: Layout,
     children: [
       {
-        path: 'index',
+        path: 'form',
         name: 'Form',
-        component: () => import('@/views/form/index'),
+        component: () => import('@/views/Form.vue'),
         meta: { title: 'Form', icon: 'form' }
       }
     ]
