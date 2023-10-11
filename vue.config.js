@@ -1,12 +1,11 @@
 'use strict'
 const path = require('path')
-const config = require('@/config/index.js')
 
 function resolve(dir) {
   return path.join(__dirname, dir)
 }
 
-const name = config.title || 'BTC Quant' // page title
+const name = 'BTC Quant' // page title
 
 // If your port is set to 80,
 // use administrator privileges to execute the command line.
@@ -36,7 +35,6 @@ module.exports = {
       warnings: false,
       errors: true
     },
-    before: require('./mock/mock-server.js')
   },
   configureWebpack: {
     // provide the app's title in webpack's name field, so that
