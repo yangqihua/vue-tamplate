@@ -76,6 +76,10 @@ export const constantRoutes = [
     meta: { title: '文档', icon: 'el-icon-s-help' },
     children: [
       {
+        path: 'https://binance-docs.github.io/apidocs/futures/cn/#185368440e',
+        meta: { title: 'U本位文档', icon: 'binance' }
+      },
+      {
         path: 'https://panjiachen.gitee.io/vue-element-admin-site/zh/guide/essentials/style.html',
         meta: { title: '前端文档', icon: 'form' }
       },

@@ -16,8 +16,8 @@
               首页
             </el-dropdown-item>
           </router-link>
-          <a target="_blank" href="https://www.binancezh.top/zh-CN/futures/BTCUSDT">
-            <el-dropdown-item>币安合约</el-dropdown-item>
+          <a target="_blank" href="https://binance-docs.github.io/apidocs/futures/cn/#185368440e">
+            <el-dropdown-item>币安文档</el-dropdown-item>
           </a>
           <a target="_blank" href="https://panjiachen.gitee.io/vue-element-admin-site/zh/guide/essentials/style.html">
             <el-dropdown-item>前端文档</el-dropdown-item>

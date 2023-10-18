@@ -11,6 +11,14 @@ const api = {
         })
     },
 
+    getSymbols: (params) => {
+        return http.get(params, "/get_all_symbols");
+    },
+
+    getSymbolBar: (params) => {
+        return http.get(params, "/get_kline");
+    },
+
     checkUser: (params) => {
         return http.get(params, "/home/checkUser");
     },

@@ -1,11 +1,11 @@
-const isTest = false
+const isTest = true
 export default {
   title: 'BTC Quant',
   userToken: 'userToken',
   fixedHeader: false,
   sidebarLogo: false,
 
-  serverUrl: isTest ? 'http://localhost:7777/' : 'http://localhost:7777/',
+  serverUrl: isTest ? 'http://0.0.0.0:9900/' : 'http://localhost:7777/',
   zeroAddress: '0x0000000000000000000000000000000000000000',
   factory: isTest ? '' : '',
 

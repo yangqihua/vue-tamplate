@@ -17,6 +17,14 @@ export function isExternal(path) {
   return /^(https?:|mailto:|tel:)/.test(path)
 }
 
+export function getNow(mills = true) {
+  let milliseconds = new Date().getTime()
+  if (!mills) {
+    return parseInt(milliseconds / 1000)
+  }
+  return milliseconds
+}
+
 /**
  * @param {string} str
  * @returns {Boolean}
